@@ -16,8 +16,6 @@ app.use(session({
 }));
 app.use(cookieParser());
 
-console.log(process.env.private_key);
-
 
 // placeholder login & success page
 app.get("/", (req, res) => {
