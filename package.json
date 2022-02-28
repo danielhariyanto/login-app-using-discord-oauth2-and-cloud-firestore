@@ -1,5 +1,5 @@
 {
-  "name": "nft-project",
+  "name": "discord-login-app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielhariyanto/nft-project.git"
+    "url": "git+https://github.com/danielhariyanto/discord-login-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danielhariyanto/nft-project/issues"
+    "url": "https://github.com/danielhariyanto/discord-login-app/issues"
   },
-  "homepage": "https://github.com/danielhariyanto/nft-project#readme",
+  "homepage": "https://github.com/danielhariyanto/discord-login-app#readme",
   "dependencies": {
     "axios": "^0.26.0",
     "btoa": "^1.2.1",
