@@ -2,14 +2,14 @@ const express = require("express");
 let session = require("express-session");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-const { sessionSecret } = require("./lib/config_secret/session_secret.json");
+//const { sessionSecret } = require("./lib/config_secret/session_secret.json");
 
 // express app setup
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({
-    secret: sessionSecret,
+    secret: process.env.sessionSecret,
     saveUninitialized: true,
     cookie: { maxAge: 86400000 }, // aka one day
     resave: false
