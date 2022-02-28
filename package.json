@@ -1,5 +1,5 @@
 {
-  "name": "discord-login-app",
+  "name": "login-app-using-discord-oauth2-and-cloud-firestore",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielhariyanto/discord-login-app.git"
+    "url": "git+https://github.com/danielhariyanto/login-app-using-discord-oauth2-and-cloud-firestore.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danielhariyanto/discord-login-app/issues"
+    "url": "https://github.com/danielhariyanto/login-app-using-discord-oauth2-and-cloud-firestore/issues"
   },
-  "homepage": "https://github.com/danielhariyanto/discord-login-app#readme",
+  "homepage": "https://github.com/danielhariyanto/login-app-using-discord-oauth2-and-cloud-firestore#readme",
   "dependencies": {
     "axios": "^0.26.0",
     "btoa": "^1.2.1",
