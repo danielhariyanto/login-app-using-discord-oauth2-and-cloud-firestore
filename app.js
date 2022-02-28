@@ -9,7 +9,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({
-    secret: process.env.sessionSecret,
+    secret: process.env.sessionSecret ? JSON.parse(process.env.sessionSecret) : undefined,
     saveUninitialized: true,
     cookie: { maxAge: 86400000 }, // aka one day
     resave: false
