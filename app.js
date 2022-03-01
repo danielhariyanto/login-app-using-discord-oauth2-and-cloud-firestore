@@ -23,7 +23,7 @@ app.set('view engine', 'pug');
 app.get("/", (req, res) => {
     session = req.session;
     if (session.username) {
-        res.render("success.pug"), {username: session.username.toString()};
+        res.render("success.pug", {username: session.username.toString()});
     } else {
         res.status(200).sendFile(path.join(__dirname, "login.html"));
     }
