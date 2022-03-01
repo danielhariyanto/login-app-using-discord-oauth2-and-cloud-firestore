@@ -15,13 +15,15 @@ app.use(session({
     resave: false
 }));
 app.use(cookieParser());
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'pug');
 
 
 // placeholder login & success page
 app.get("/", (req, res) => {
     session = req.session;
     if (session.username) {
-        res.render(path.join(__dirname, "success.pug")), {username: session.username};
+        res.render("success.pug"), {username: session.username};
     } else {
         res.status(200).sendFile(path.join(__dirname, "login.html"));
     }
