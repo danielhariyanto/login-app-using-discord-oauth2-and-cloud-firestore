@@ -21,7 +21,8 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
     session = req.session;
     if (session.username) {
-        res.status(200).sendFile(path.join(__dirname, "success.html"), {username:session.username});
+        console.log(session.username);
+        res.status(200).sendFile(path.join(__dirname, "success.html"));
     } else {
         res.status(200).sendFile(path.join(__dirname, "login.html"));
     }
